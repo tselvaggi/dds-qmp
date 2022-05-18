@@ -3,7 +3,6 @@ import java.awt.Color;
 public class Prenda {
 
   private TipoPrenda tipoPrenda;
-  private TramaPrenda tramaPrenda;
   private String tipoTela;
   private Color colorPrincipal;
   private Color colorSecundario;
