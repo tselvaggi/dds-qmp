@@ -13,7 +13,7 @@ public class PrimeraIteracionTest {
 
   @Test
   public void camisaConTipoTela() {
-    assertEquals(camisaDeLana().getTipoTela(), "LANA");
+    assertEquals(camisaDeLana().getMaterial().toString(), "LANA");
   }
 
   @Test
@@ -27,6 +27,6 @@ public class PrimeraIteracionTest {
   }
 
   private Prenda camisaDeLana() {
-    return new Prenda(TipoPrenda.CAMISA, "LANA", null, null);
+    return new Prenda(TipoPrenda.CAMISA, Material.LANA, null, null);
   }
 }
