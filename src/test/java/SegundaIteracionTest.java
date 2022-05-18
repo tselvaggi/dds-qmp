@@ -32,7 +32,8 @@ public class SegundaIteracionTest {
 
     assertTrue(atuendo.esValida());
   }
-
+  
+  @Test
   public void puedoObtenerPrendaPorCategoria() {
     Atuendo atuendo = new Atuendo();
     ArrayList<Prenda> prendas = buildUniformeColegioSanJuan();
