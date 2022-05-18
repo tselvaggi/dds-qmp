@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.math.BigDecimal;
 
 public class PrendaBuilder {
   Prenda prenda = new Prenda();
@@ -19,6 +20,9 @@ public class PrendaBuilder {
     prenda.setColorPrincipal(colorPrincipal);
   }
 
+  public void setTemperaturaMaximaAdecuada(BigDecimal temperaturaMaximaAdecuada){
+    prenda.setTemperaturaMaximaAdecuada(temperaturaMaximaAdecuada);
+  }
   public void setColorSecundario(Color colorSecundario) {
     prenda.setColorSecundario(colorSecundario);
   }

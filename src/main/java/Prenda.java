@@ -1,4 +1,8 @@
 import java.awt.Color;
+import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Prenda {
 
@@ -7,6 +11,8 @@ public class Prenda {
   private Material material;
   private Color colorPrincipal;
   private Color colorSecundario;
+
+  private BigDecimal temperaturaMaximaAdecuada;
 
   public Prenda(TipoPrenda tipoPrenda, Material material,
                 Color colorPrincipal, Color colorSecundario) {
@@ -17,7 +23,6 @@ public class Prenda {
   }
 
   public Prenda() {
-
   }
 
   public CategoriaPrenda getCategoriaPrenda() {
@@ -64,6 +69,13 @@ public class Prenda {
     return this.tramaPrenda;
   }
 
+  public void setTemperaturaMaximaAdecuada(BigDecimal temperaturaMaximaAdecuada) {
+    this.temperaturaMaximaAdecuada = temperaturaMaximaAdecuada;
+  }
+
+  public boolean esAdecuadaTemperaturaActual(BigDecimal temperaturaActual){
+    return this.temperaturaMaximaAdecuada.compareTo(temperaturaActual) <= 0;
+  }
   public boolean esValida() {
     return this.tipoPrenda != null && this.material != null && this.colorPrincipal != null;
   }

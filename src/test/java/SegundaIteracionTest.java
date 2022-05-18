@@ -32,7 +32,7 @@ public class SegundaIteracionTest {
 
     assertTrue(atuendo.esValida());
   }
-
+  @Test
   public void puedoObtenerPrendaPorCategoria() {
     Atuendo atuendo = new Atuendo();
     ArrayList<Prenda> prendas = buildUniformeColegioSanJuan();
@@ -42,7 +42,7 @@ public class SegundaIteracionTest {
 
     assertEquals(CategoriaPrenda.SUPERIOR, prendaSuperiorSanJuan.getCategoriaPrenda());
     assertEquals(TipoPrenda.CHOMBA, prendaSuperiorSanJuan.getTipoPrenda());
-    assertEquals(prendaSuperiorSanJuan.getColorPrincipal(), Color.green);
+    assertEquals(Color.green, prendaSuperiorSanJuan.getColorPrincipal());
     assertEquals(Material.PIQUE, prendaSuperiorSanJuan.getMaterial());
   }
 
