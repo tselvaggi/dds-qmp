@@ -4,14 +4,14 @@ public class Prenda {
 
   private TipoPrenda tipoPrenda;
   private TramaPrenda tramaPrenda;
-  private String tipoTela;
+  private Material material;
   private Color colorPrincipal;
   private Color colorSecundario;
 
-  public Prenda(TipoPrenda tipoPrenda, String tipoTela,
+  public Prenda(TipoPrenda tipoPrenda, Material material,
                 Color colorPrincipal, Color colorSecundario) {
     this.tipoPrenda = tipoPrenda;
-    this.tipoTela = tipoTela;
+    this.material = material;
     this.colorPrincipal = colorPrincipal;
     this.colorSecundario = colorSecundario;
   }
@@ -28,16 +28,16 @@ public class Prenda {
     return tipoPrenda;
   }
 
-  public String getTipoTela() {
-    return tipoTela;
+  public Material getMaterial() {
+    return material;
   }
 
   public void setTipoPrenda(TipoPrenda tipoPrenda) {
     this.tipoPrenda = tipoPrenda;
   }
 
-  public void setTipoTela(String tipoTela) {
-    this.tipoTela = tipoTela;
+  public void setTipoTela(Material material) {
+    this.material = material;
   }
 
   public void setColorPrincipal(Color colorPrincipal) {
@@ -65,6 +65,6 @@ public class Prenda {
   }
 
   public boolean esValida() {
-    return this.tipoPrenda != null && this.tipoTela != null && this.colorPrincipal != null;
+    return this.tipoPrenda != null && this.material != null && this.colorPrincipal != null;
   }
 }

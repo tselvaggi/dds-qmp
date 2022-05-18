@@ -11,8 +11,8 @@ public class PrendaBuilder {
     prenda.setTipoPrenda(tipoPrenda);
   }
 
-  public void setTipoTela(String tipoTela) {
-    prenda.setTipoTela(tipoTela);
+  public void setTipoTela(Material material) {
+    prenda.setTipoTela(material);
   }
 
   public void setColorPrincipal(Color colorPrincipal) {
