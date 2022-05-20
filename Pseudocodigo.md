@@ -1,3 +1,10 @@
+# Diagrama Clases
+
+![PP7DReCm48Jl-nG-aWDlK4LnQLGXDGrAKNkCjlQAMZ8uyiy9zTrh74mHEG4xCnyxzi5vj3xq6g2nD4XaPRbdbT76FWv0Q7IEtUSZC4Rk4xMIMEpI1vSa0afigR-HHHyiSk43wi9l9plupJZkG-IP3I_Aiv0MkFypHz8w8rYIq5cY0Rvre2b2G-ZP2JrPXNg4jcxErnDlZvUQlorwgsucTvWS7](https://user-images.githubusercontent.com/63843225/169464348-f27ac1ad-a13e-463c-9425-1b346cc6a6ff.png)
+
+
+# Pseudocodigo
+
 ```java
 
 public class Atuendo {
