@@ -4,7 +4,7 @@ public class Prenda {
 
   private TipoPrenda tipoPrenda;
 
-  private String tipoTela;
+  private Material tipoTela;
   private Color colorPrincipal;
   private Color colorSecundario;
 
